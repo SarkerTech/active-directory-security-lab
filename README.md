@@ -6,13 +6,12 @@ Hands-on Active Directory administration and Windows security lab built in a vir
 
 - Deploy a Windows Server Domain Controller
 - Configure Active Directory Domain Services
-- Create users and security groups
-- Create and organize Organizational Units (OUs)
+- Create users, security groups, and OUs
 - Configure Group Policy
 - Configure password and account lockout policies
 - Configure file and folder permissions
 - Enable Windows security auditing
-- Investigate security events
+- Investigate Windows security events
 
 ## Lab Environment
 
@@ -24,47 +23,38 @@ Hands-on Active Directory administration and Windows security lab built in a vir
 - PowerShell
 - VirtualBox
 
-## Active Directory
+## Active Directory Configuration
 
-### Users
-- Standard user accounts
-- Administrative account
-
-### Groups
-- Security groups
+- Domain: `corp.local`
+- Domain Controller: Windows Server 2025
+- Organizational Units: IT, Security
+- User account: John Smith
+- Security group: SecurityTeam
 - Group-based access control
-
-### Organizational Units
-- Users OU
-- Groups OU
-- Administrative OU
 
 ## Security Configuration
 
 - Password policy
 - Account lockout policy
-- Account security controls
 - Windows Firewall
 - Security auditing
 - Group Policy security settings
 
 ## Permissions
 
-File and folder permissions will be configured using groups and tested with standard and administrative accounts.
+Configured a protected folder and assigned access through the `SecurityTeam` group.
 
 ## Security Testing
-
-The lab will include:
 
 - Failed login attempts
 - Account lockout testing
 - Permission testing
 - Windows security event investigation
-- Privileged group change monitoring
+- Group membership verification
 
 ## Evidence
 
-Screenshots and documentation will be added as each lab activity is completed.
+Screenshots documenting the lab configuration and security testing are available in the `screenshots/` folder.
 
 ## Skills Demonstrated
 
